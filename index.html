@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tronos de Skyrim</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Selector flotante de idioma -->
+  <div class="lang-switch">
+    <button onclick="setLanguage('es')">ES</button>
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('fr')">FR</button>
+    <button onclick="setLanguage('de')">DE</button>
+    <button onclick="setLanguage('it')">IT</button>
+    <button onclick="setLanguage('pt')">PT</button>
+    <button onclick="setLanguage('pl')">PL</button>
+    <button onclick="setLanguage('ru')">RU</button>
+    <button onclick="setLanguage('ja')">JA</button>
+    <button onclick="setLanguage('zh')">ZH</button>
+  </div>
+
   <canvas id="embers"></canvas>
 
   <main class="container">
     <section class="hero">
-      <h1 class="glow">TRONOS DE SKYRIM</h1>
-      <p class="tagline">La guerra civil no se observa. Se vive.</p>
-      <p class="subtitle">
-        Una experiencia narrativa centrada en facciones, decisiones y consecuencias.
-      </p>
+      <h1 class="glow" data-i18n="title"></h1>
+      <p class="tagline" data-i18n="tagline"></p>
+      <p class="subtitle" data-i18n="subtitle"></p>
 
       <div class="status">
-        <span>En desarrollo activo</span>
+        <span data-i18n="status1"></span>
         <span class="dot"></span>
-        <span>Sin fecha de lanzamiento</span>
+        <span data-i18n="status2"></span>
       </div>
 
-      <a href="https://discord.gg/d2QzYetpx6" class="cta">
-        Entrar al Discord · Seguir el desarrollo
-      </a>
+      <a href="https://discord.gg/d2QzYetpx6" class="cta" data-i18n="cta"></a>
     </section>
 
     <section class="content">
-      <h2>Qué es Tronos de Skyrim</h2>
-      <p>
-        Tronos de Skyrim es una modlist curada y cohesionada que transforma la guerra civil
-        en un conflicto profundo, crudo y persistente.  
-        No es una colección de mods. Es una visión.
-      </p>
+      <h2 data-i18n="about_title"></h2>
+      <p data-i18n="about_text"></p>
 
       <ul class="pillars">
-        <li>▸ Narrativa coherente y oscura</li>
-        <li>▸ Elección de facción con impacto real</li>
-        <li>▸ Experiencia personalizada desde el launcher</li>
-        <li>▸ Proyecto vivo, en evolución constante</li>
+        <li data-i18n="pillar1"></li>
+        <li data-i18n="pillar2"></li>
+        <li data-i18n="pillar3"></li>
+        <li data-i18n="pillar4"></li>
       </ul>
 
-      <p class="note">
-        El desarrollo avanza a ritmo sostenible y compatible con la vida real.  
-        Este proyecto no es un producto comercial ni tiene fechas comprometidas.
-      </p>
+      <p class="note" data-i18n="note"></p>
     </section>
   </main>
 
